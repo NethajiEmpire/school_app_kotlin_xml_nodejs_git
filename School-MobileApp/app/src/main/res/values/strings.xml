@@ -1,0 +1,532 @@
+<resources>
+    <string name="app_name">Vista Academy</string>
+
+    <string name="facebook_app_id">473594360378979</string>
+    <string name="fb_login_protocol_scheme">fb473594360378979</string>
+    <string name="facebook_client_token">fe92ab84f3d293e28c964e0ccdcdd879</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="Languages">
+        <item>Grade</item>
+        <item>Grade A</item>
+        <item>Grade B</item>
+        <item>Grade C</item>
+        <item>Grade D</item>
+        <item>Grade E</item>
+        <item>Grade F</item>
+    </string-array>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="new_version_available">There is a newer version of EPO application available, click &quot;UPDATE&quot; to update now ?</string>
+
+    <!-- Maps API key-->
+    <string name="maps_api_key" translatable="false"> </string>
+    <!-- Drawer related strings (No need to translate)-->
+    <string name="drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="drawer_close" translatable="false">Close navigation drawer</string>
+
+    <!-- Offline Cart -->
+    <string name="added_to_offline_cart">Added to Offline Cart</string>
+    <string name="offline_mode_add_to_cart_message"> You are currently not connected to the Internet. There is no assurance that you will definitely get the product as this depends on product availabilty at the time of sync.</string>
+    <string name="offline_cart">Offline Cart</string>
+    <string name="sync_cart_with_server_body_message">There are some pending add to cart instances on this device which are not synced with server. Would you like to sync them?</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="syncing_in_bg">Syncing in background</string>
+
+    <!-- Offline WishList to Cart -->
+    <string name="added_to_offline_wish_list_to_cart">Add to Offline Wish List to Cart</string>
+    <string name="offline_wish_list_to_cart">Offline Wish List to Cart</string>
+    <string name="sync_wish_list_to_cart_with_server_body_message">There are some pending Wish List to cart instances on this device which are not synced with server. Would you like to sync them?</string>
+
+    <string name="add_to_offline_wish_list_all_to_cart">Add to Offline Wish List All to Cart</string>
+    <string name="offline_wish_list_all_to_cart">Offline Wish List All to Cart</string>
+    <string name="sync_wish_list_all_to_cart_with_server_body_message">There are some pending Wish List All to cart instances on this device which are not synced with server. Would you like to sync them?</string>
+
+    <!-- Miscellaneous Strings-->
+    <string name="error">Error</string>
+    <string name="oops">Oops...</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="you_are_offline">You are offline</string>
+    <string name="error_internet">Internet not available, Cross check your internet connectivity and try again later.</string>
+    <string name="error_server">Looks like our server is down for maintenance, Please try again later.</string>
+    <string name="error_request">Unable to communicate with the server at the moment. Please try again later.</string>
+    <string name="error_timeout">The request has timed out. The network seems to be very slow, Please try again!!!</string>
+    <string name="close">Close</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="try_again">Try Again</string>
+    <string name="is_required">is required</string>
+    <string name="enter_a_valid">Enter a valid</string>
+    <string name="colon">:</string>
+    <string name="download_started">Download Started</string>
+    <string name="yes_remove_it">Yes, Remove It</string>
+    <string name="update">Update</string>
+    <string name="later">Later</string>
+    <string name="storage_acccess_permission">Access needed to download the content</string>
+    <string name="update_alert_title">Update Alert</string>
+    <string name="continue_text">Continue</string>
+
+
+    <string name="notification_channel_id">Alert</string>
+    <string name="notification_channel_name">Alert</string>
+    <string name="no_internet_connection">No Internet Connection.. Please Try Again..</string>
+    <string name="time_out_error">TimeOut Error Please Try Again..</string>
+    <string name="session_expired">Session Expired. Login to continue</string>
+    <string name="server_error">Server Error.. Please Try Again..</string>
+    <string name="network_error">Network Error.. Please Try Again..</string>
+    <string name="parsing_error">Parse Error.. Please Try Again..</string>
+    <string name="add_address">Add Address</string>
+    <string name="enter_nick_name_as">Enter Nick Name This Address As</string>
+    <string name="enter_address_name">Enter Address Name</string>
+    <string name="address">Address</string>
+    <string name="enter_full_address">Enter Full Address</string>
+    <string name="pin_code">Pincode</string>
+    <string name="enter_pin_code">Enter Pincode</string>
+    <string name="landmark">Landmark</string>
+    <string name="enter_landmark">Enter Landmark</string>
+    <string name="add">Add</string>
+    <string name="select_location_below">Select Location Below</string>
+    <string name="choose_store">Choose Store</string>
+    <string name="search_store">Search Store(PinCode or Location Name)</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="coupons">Coupons</string>
+    <string name="dummy_amount">$ 0.00</string>
+    <string name="my_referrals">My Referrals</string>
+    <string name="available_credit">Available Credit</string>
+    <string name="dummy">Dummy</string>
+    <string name="search_products">Search Products</string>
+    <string name="store_is_open">Store is Open</string>
+    <string name="popular_categories">Popular Categories</string>
+    <string name="view_all">View All</string>
+    <string name="products">Products</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="saved_address">Saved Address</string>
+    <string name="back">Back</string>
+    <string name="proceed_with_your">Proceed With Your</string>
+    <string name="number">Number</string>
+    <string name="mobile">Mobile</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="share_your_referral_code">Share your referral code</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="signin_with_otp">Signin with OTP</string>
+    <string name="looks_like_you_have_not_referred">Looks like you\'ve not referred</string>
+    <string name="start_referring">Start Referring</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="enter_the_amount">Enter The Amount</string>
+    <string name="no_records_found">No Records Found</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="otp">Otp</string>
+    <string name="digit_code_sent_to">6 digit code sent to </string>
+    <string name="submit">Submit</string>
+    <string name="resend_otp">Resend Otp</string>
+    <string name="resend_in">Resend In</string>
+    <string name="lets_give_your">Lets\'s give your</string>
+    <string name="sign_in">Sign In</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="location">Location</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="full_name_s">Full Name *</string>
+    <string name="email_s">Email *</string>
+    <string name="mobile_s">Mobile *</string>
+    <string name="password_s">Password *</string>
+    <string name="confirm_password_s">Confirm Password *</string>
+    <string name="location_s">Location *</string>
+    <string name="thank_you_for_your_order">Thank you for your order!</string>
+    <string name="your_order_number_is">Your order number is #</string>
+    <string name="order_success1">Please visit My Order page to manage your orders.</string>
+    <string name="order_success2">If you want to reorder the same items please vist my orders page and click Reorder button to proceed..</string>
+    <string name="track_order">Track Order</string>
+    <string name="shop_more">Shop More</string>
+    <string name="url">Url</string>
+    <string name="method">Method</string>
+    <string name="response_code">Response Code</string>
+    <string name="request_body">Request Body</string>
+    <string name="request_header">Request Header</string>
+    <string name="response">Response</string>
+    <string name="items">Items</string>
+    <string name="saved">Saved</string>
+    <string name="offer">Offer</string>
+    <string name="discount">Discount</string>
+    <string name="coupon_content">Adidas\'s gift value packed 50.00% OFF for every pack. Gift card cost 200 POINTS</string>
+    <string name="expires">Expires</string>
+    <string name="expires_dummy">Aug 31, 2021</string>
+    <string name="copy">Copy</string>
+    <string name="deliver_here">Deliver Here</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="category">Category</string>
+    <string name="avalilable_only">Available Only</string>
+    <string name="thats_all_folks">That\'s All Folks</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="your_order_has_been_placed">Your Order has been placed</string>
+    <string name="amount">Amount</string>
+    <string name="placed">Placed</string>
+    <string name="reorder">Reorder</string>
+    <string name="up_to">Up to</string>
+    <string name="since">since</string>
+    <string name="credit">Credit</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="alert">Alert</string>
+    <string name="api_data">Api Data</string>
+    <string name="enquiry">Enquiry</string>
+    <string name="name">Name</string>
+    <string name="type_here">Type Here</string>
+    <string name="available_pack_size_for">Available Pack Size for</string>
+    <string name="review_basket">Review Basket</string>
+    <string name="empty_cart">Empty Cart</string>
+    <string name="your_cart">Your Cart</string>
+    <string name="your_basket_is_empty">Your Basket is Empty</string>
+    <string name="retry">Retry</string>
+    <string name="start_shopping">Start Shopping</string>
+    <string name="you_saved">You Saved</string>
+    <string name="checkout">Checkout</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="est_total">Est. Total</string>
+    <string name="gst">Gst</string>
+    <string name="your_query_or_feedback">Your Query or Feedback</string>
+    <string name="our_top_brands">Our Top Brands</string>
+    <string name="notifications">Notifications</string>
+    <string name="orders">Orders</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_id">Order Id</string>
+    <string name="placed_on">Placed on</string>
+    <string name="delivery_date_time"><![CDATA[Delivery Date & Time]]></string>
+    <string name="price_details">Price Details</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="total">Total</string>
+    <string name="payable_amount">Payable Amount</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="order_accepted">Order Accepted</string>
+    <string name="order_delivered">Order Delivered</string>
+    <string name="order_assigned_to_delivery_boy">Order Assigned to Delivery Boy</string>
+    <string name="my_orders">My Orders</string>
+    <string name="search_orders">Search Orders</string>
+    <string name="search_category">Search Category</string>
+    <string name="product">Product</string>
+    <string name="see_more_brand_products">See More Brand Products</string>
+    <string name="inclusive_of_all_taxes">(Inclusive of all taxes)</string>
+    <string name="available_pack_sizes">Available Pack sizes</string>
+    <string name="about_this_product">About this product</string>
+    <string name="description">Description</string>
+    <string name="why_should_you_buy">Why Should you Buy?</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="how_to_use">How to Use</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="reward_points">Reward Points</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="logout">Logout</string>
+    <string name="add_multiple_orders">Add Multiple Orders</string>
+    <string name="select_nos">Select Nos</string>
+    <string name="proceed">Proceed</string>
+    <string name="search">Search</string>
+    <string name="wishlist_is_empty">Wishlist is Empty</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="wishlist_content">Looks like you have no items in your wishlist</string>
+    <string name="store_is_closed">Store is Closed</string>
+    <string name="store">Store</string>
+    <string name="basket">Basket</string>
+    <string name="about">About</string>
+    <string name="more">More</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact">Contact</string>
+    <string name="refund_policy">Refund Policy</string>
+    <string name="shipping_policy">Shipping Policy</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="please_enter_address_name">Please Enter Address Name</string>
+    <string name="please_enter_address">Please Enter Address</string>
+    <string name="please_enter_landmark">Please Enter Landmark</string>
+    <string name="please_enter_pincode">Please Enter Pincode</string>
+    <string name="delivery">Delivery</string>
+    <string name="payment">Payment</string>
+    <string name="cart_summary">Cart Summary</string>
+    <string name="choose_delivery_option">Choose Delivery Option</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="collect_from_store">Collect From Store</string>
+    <string name="use_pincode_to_check_delivery_info">Use Pincode to Check Delivery Info</string>
+    <string name="check_delivery">Check Delivery</string>
+    <string name="check_available_pincode">Check Available Pincode</string>
+    <string name="available_pincode">Available Pincode</string>
+    <string name="delivery_to">"Delivery to "</string>
+    <string name="change">Change</string>
+    <string name="coupon">Coupon</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="non_listed_content">Non listed products if any Please click here to upload (Optional)</string>
+    <string name="delivery_note_optional">Delivery Notes (Optional)</string>
+    <string name="enter_delivery_notes_here">Enter Delivery Notes Here</string>
+    <string name="select_delivery_address">Select Delivery Address</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="your_saved_delivery_address">Your Saved Delivery Address</string>
+    <string name="are_you_sure_to_use_wallet_amount">Are you sure to use wallet amount</string>
+    <string name="upi">UPI</string>
+    <string name="all_upi_payments">All UPI Payments</string>
+    <string name="paytm_gpay_phonepe">[Paytm,Gpay,PhonePe]</string>
+    <string name="cash">Cash</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="pay_on_delivery">[Pay On Delivery]</string>
+    <string name="pg">Pg</string>
+    <string name="online_payments">Online Payments</string>
+    <string name="visa_master">[VISA,MASTER]</string>
+    <string name="pickup_details">Pickup Details</string>
+    <string name="attach_screenshot">Attach Screenshot</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="please_click_back_again_to_exit">Please click BACK again to exit</string>
+    <string name="profile">Profile</string>
+    <string name="quick_order">Quick Order</string>
+    <string name="credit_book">Credit Book</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="feed_back">Feedback</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="refer1">Hi I just completed my purchase with</string>
+    <string name="refer2">they gave me an exclusive coupon for my friends. I loved very much their online shopping experience its very simple and easy to use also their products and pricing are much reasonable.Access :</string>
+    <string name="refer3">Cheers,</string>
+    <string name="refer4">you can visit website in</string>
+    <string name="refer5">you can install play store</string>
+    <string name="and">And</string>
+    <string name="please_enter_mobile_no">Please Enter Mobile No</string>
+    <string name="please_enter_valid_mobile_no">Please Enter Valid Mobile No</string>
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="wallet_payment">Wallet Payment</string>
+    <string name="please_enter_valid_otp">Please Enter Valid OTP</string>
+    <string name="please_enter_confirm_password">Please Enter Confirm Password</string>
+    <string name="password_and_confirm_password_does_not_match">Password and Confirm Password Does not Match</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_location">Please Enter Location</string>
+    <string name="please_enter_mail">Please Enter Mail</string>
+    <string name="place_order">Place Order</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+    <string name="oops_something_went_wrong">Oops! Something went wrong!</string>
+    <string name="order_failed_msg">It doesn\'t appear to have affected your data, Please check my order page make sure order placed or not.</string>
+    <string name="choose_pincode_first">Choose Pincode First</string>
+    <string name="choose_address">Choose Address</string>
+    <string name="please_select_or_add_address">Please select or add address</string>
+    <string name="item">Item</string>
+    <string name="choose_pickup_option">Choose Pickup Option</string>
+    <string name="choose_payment_mode">Choose Payment Mode</string>
+    <string name="shop_name">Shop Name</string>
+    <string name="shop_location">Shop Location</string>
+    <string name="please_enter_coupon">Please Enter Coupon</string>
+    <string name="please_enter_valid_pincode">Please Enter Valid Pincode</string>
+    <string name="sorry_you_cannot_add_more_quantity">Sorry you cannot add more quantity</string>
+    <string name="copied_to_clipboard">Copied to Clipboard</string>
+    <string name="copied">Copied</string>
+    <string name="quantity">Quantity</string>
+    <string name="empty">Empty</string>
+    <string name="balance">Balance</string>
+    <string name="debit">Debit</string>
+    <string name="delete">Delete</string>
+    <string name="minimum_order_content">Hi, Awasome you have ordered ₹{{var1}}. Only ₹{{var2}} is left to reach the minimum order value. Hope you will complete with few more clicks.</string>
+    <string name="card">Card</string>
+    <string name="wallet">Wallet</string>
+    <string name="share_with">Share With</string>
+    <string name="see_more">See More</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="select_product">Select Product</string>
+    <string name="product_already_in_cart">Product Already in Cart</string>
+    <string name="please_choose_details">Please Choose Details</string>
+    <string name="please_fill">Please Fill</string>
+    <string name="choose_your_option">Choose Your Option</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="storage">Storage</string>
+    <string name="enter_pin_code_and_search">Enter PinCode And Search</string>
+    <string name="pick_up_delivery">Pick Up Delivery</string>
+    <string name="invalid">Invalid</string>
+    <string name="help">Help</string>
+    <string name="delivered">Delivered</string>
+    <string name="my_delivery">My Delivery</string>
+    <string name="home">Home</string>
+    <string name="clear_all">Clear All</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="quick_orders">Quick Orders</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="completed_orders">Completed Orders</string>
+    <string name="quick">Quick</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="pending_order">Pending Order</string>
+    <string name="before">Before</string>
+    <string name="time">Time</string>
+    <string name="payment_card">Payment Card</string>
+    <string name="complete_order">Complete Order</string>
+    <string name="locate">Locate</string>
+    <string name="call">Call</string>
+    <string name="delivery_before">Delivery Before</string>
+    <string name="order_list">Order List</string>
+    <string name="on_time_delivery">On Time Delivery</string>
+    <string name="late_delivery">Late Delivery</string>
+    <string name="at">At</string>
+    <string name="filter">Filter</string>
+    <string name="delivery_at">Delivery At</string>
+    <string name="client_signature">Client Signature</string>
+    <string name="clear">Clear</string>
+    <string name="finish">Finish</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="action">Action</string>
+    <string name="image">Image</string>
+    <string name="add_category">Add Category</string>
+    <string name="category_details">Category Details</string>
+    <string name="created">Created</string>
+    <string name="status">Status</string>
+    <string name="active">Active</string>
+    <string name="inactive">In Active</string>
+    <string name="category_name">Category Name</string>
+    <string name="enter_category_name">Enter Category Name</string>
+    <string name="customer_type">Customer Type</string>
+    <string name="offer_info">Offer Info</string>
+    <string name="choose_file">Choose File</string>
+    <string name="enter_text_here">Enter Text Here</string>
+    <string name="save">Save</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="add_sub_category">Add Sub Category</string>
+    <string name="sub_category_details">Sub Category Details</string>
+    <string name="sub_category_name">Sub Category name</string>
+    <string name="select_category">Select category</string>
+    <string name="enter_sub_category_name">Enter Sub Category Name</string>
+    <string name="edit_sub_category">Edit Sub Category</string>
+    <string name="brand">Brand</string>
+    <string name="measurement">Measurement</string>
+    <string name="add_brand">Add Brand</string>
+    <string name="add_measurement">Add Measurement</string>
+    <string name="add_product">Add Product</string>
+    <string name="measurement_details">Measurement details</string>
+    <string name="brand_details">Brand Details</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="measurement_name">Measurement Name</string>
+    <string name="enter_brand_name">Enter Brand Name</string>
+    <string name="edit_brand">Edit Brand</string>
+    <string name="enter_measurement_name">Enter Measurement Name</string>
+    <string name="edit_measurement">Edit Measurement</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="select_sub_category">Select Sub Category</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="product_name">Product Name</string>
+    <string name="enter_offer_price">Enter Offer Price</string>
+    <string name="offer_price">Offer Price</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="price">Price</string>
+    <string name="select_unit">Select Unit</string>
+    <string name="enter_quantity">Enter Quantity</string>
+    <string name="add_multiple_quantity">Add Multiple Quantity</string>
+    <string name="product_details">Product Details</string>
+    <string name="recomment_to_customer">Recommend To Customer</string>
+    <string name="displayed_to_home">Displayed To Home</string>
+    <string name="stock_available">Stock Available</string>
+    <string name="sno">S No</string>
+    <string name="stock">Stock</string>
+    <string name="minimum_stock">Minimum Stock</string>
+    <string name="no">No</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="order">Order</string>
+    <string name="order_no">Order No</string>
+    <string name="customer_info">Customer Info</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_value">Order Value</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="title_activity_circle_profile">CircleProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="test_profile_image_desc">Profile Image</string>
+    <string name="collapsing_profile_behavior" translatable="false">com.cgs.piechips.behavior.CollapsingProfileBehavior</string>
+    <string name="google_maps_key">AIzaSyCwohVb_1G-e7C-ccL1FFYL-DPV3gCOQmY</string>
+
+    <string name="password_length_should_be_eight_characters">Password length must have atleast 8 character</string>
+    <string name="password_should_contain_atleast_one_special_character">Password must have atleast one special character</string>
+    <string name="password_should_contain_atleast_one_uppercase_character">Password must have atleast one uppercase character</string>
+    <string name="password_should_contain_atleast_one_lowercase_character">Password must have atleast one lowercase character</string>
+    <string name="password_should_contain_atleast_one_numeric">Password must have atleast one numeric character</string>
+    <string name="password_not_match">Password Not Match</string>
+
+    <string name="partner_subdomain">piechips</string>
+    <string name="create_your_avatar_label">Create Avatar</string>
+    <string name="update_avatar_label">Update Avatar</string>
+
+    <declare-styleable name="SearchableSpinner">
+        <attr name="hintText" format="string" />
+    </declare-styleable>
+    <string name="view_pager_bottom_sheet_behavior" translatable="false">com.piechips.user.customBottomSheet.ViewPagerBottomSheetBehavior</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+</resources>

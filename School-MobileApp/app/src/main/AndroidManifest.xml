@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+
+            <data android:mimeType="vnd.android.cursor.dir/image" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> <!-- <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" /> -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".helpers.AppController"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LMS"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.StudentLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TermFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GuestStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ParentPersonalInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ParentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StudentAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProjectResActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AssignmentResActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeWorkResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentHistoryStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeworkViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherExamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherAssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherHomeWorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsExamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsAssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsHomeworkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KidsTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherRaiseComplaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LeaveRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StudentReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExamResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExamStudentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminComplaintsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AcademicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExamListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherClassTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PdfViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminExamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminCircularActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminFinanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StaffInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StudentInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LeaveApprovalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClassTestReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubjectWiseProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherProfileDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ClassesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExaminationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LeaderBoardActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ClsRoomChampionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FeeCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AssignmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StudentStatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StudentListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ImageViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeWorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ActivityScoreBoard"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GuestFeeRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ApplicationStaticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GuestLandingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GuestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentSummary"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FeeStructureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExamFeesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/SplashScreen">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- android:pathPrefix="/android" -->
+                <data
+                    android:host="www.lms.sch.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.lms.sch.com"
+                    android:scheme="https" />
+                <data
+                    android:host="www.lms.sch.com"
+                    android:scheme="app" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DashBoardActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".firebase.FcmReceiverNew"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsCollectionEnabled}" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.lms.sch.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

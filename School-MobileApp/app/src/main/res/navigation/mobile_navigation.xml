@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.lms.sch.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home_teacher"
+        android:name="com.lms.sch.fragment.TeacherHome2Fragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_teacher_home2" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_home_new"
+        android:name="com.lms.sch.fragment.HomeNewFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_new" >
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_my_class"
+        android:name="com.lms.sch.fragment.TeacherProgressFragment"
+        android:label="My Class"
+        tools:layout="@layout/fragment_teacher_progress" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_my_subject"
+        android:name="com.lms.sch.fragment.MySubjectFragment"
+        android:label="My Subject"
+        tools:layout="@layout/fragment_my_subject" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.lms.sch.fragment.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_progress"
+        android:name="com.lms.sch.fragment.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress" />
+
+    <fragment
+        android:id="@+id/navigation_fees"
+        android:name="com.lms.sch.fragment.FeesFragment"
+        android:label="Fees"
+        tools:layout="@layout/fragment_fees" />
+
+    <fragment
+        android:id="@+id/navigation_live_class_list"
+        android:name="com.lms.sch.fragment.ListFragment"
+        android:label="LiveClass"
+        tools:layout="@layout/fragment_list" />
+  <!--  <fragment
+        android:id="@+id/Teacher_Home_Page"
+        android:name="com.lms.sch.fragment.TeacherHomeFragment"
+        android:label="TeacherHomePage"
+        tools:layout="@layout/fragment_teacher_home" />-->
+
+    <fragment
+        android:id="@+id/navigation_home_parent"
+        android:name="com.lms.sch.fragment.HomeParentsFragment"
+        android:label="HomeParent"
+        tools:layout="@layout/fragment_home_parents" />
+
+    <fragment
+        android:id="@+id/navigation_parent_child_progress"
+        android:name="com.lms.sch.fragment.ParentChildProgressFragment"
+        android:label="HomeParent"
+        tools:layout="@layout/fragment_parent_child_progress" />
+    <fragment
+        android:id="@+id/navigation_Home_admin"
+        android:name="com.lms.sch.fragment.AdminHomeFragment"
+        android:label="HomeParent"
+        tools:layout="@layout/fragment_admin_home" />
+    <fragment
+        android:id="@+id/navigation_Admin_User_Management"
+        android:name="com.lms.sch.fragment.UserManagementFragment"
+        android:label="HomeParent"
+        tools:layout="@layout/fragment_admin_user_management" />
+    <fragment
+        android:id="@+id/navigation_Admin_Finance"
+        android:name="com.lms.sch.fragment.FinanceFragment"
+        android:label="HomeParent"
+        tools:layout="@layout/fragment_admin_finance" />
+
+</navigation>

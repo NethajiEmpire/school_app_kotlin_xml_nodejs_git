@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_line_curve_8dp_grey_blue"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/top"
+                android:paddingHorizontal="16dp"
+                android:layout_height="wrap_content">
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:riv_corner_radius="20dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/ic_user_profile"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/profile"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/stdName"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Karthick"
+                        android:textColor="@color/black_varient3"
+                        android:textSize="@dimen/_14sp" />
+                    <TextView
+                        android:id="@+id/rollNo"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll:21"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/_12sp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:id="@+id/status"
+                    android:background="@drawable/border_curve_24dp"
+                    android:backgroundTint="#EAFFEA"
+                    android:paddingVertical="2dp"
+                    android:paddingHorizontal="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="@dimen/_12sp"
+                    style="@style/FontRegular"
+                    android:textColor="#32B138"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/dash_line"/>
+            <LinearLayout
+                android:id="@+id/attendanceLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <TextView
+                    android:id="@+id/present"
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:paddingVertical="6dp"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/radio_empty"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:textColor="#868686"
+                    android:textSize="@dimen/_14sp" />
+                <TextView
+                    android:id="@+id/absent"
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:drawablePadding="6dp"
+                    android:layout_gravity="center"
+                    android:paddingVertical="6dp"
+                    android:drawableStart="@drawable/radio_empty"
+                    android:layout_height="wrap_content"
+                    android:text="Absent"
+                    android:textColor="#868686"
+                    android:textSize="@dimen/_14sp" />
+                <TextView
+                    android:id="@+id/halfDay"
+                    style="@style/FontRegular"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:drawablePadding="6dp"
+                    android:paddingVertical="6dp"
+                    android:drawableStart="@drawable/radio_empty"
+                    android:layout_height="wrap_content"
+                    android:text="Half Day"
+                    android:textColor="#868686"
+                    android:textSize="@dimen/_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_curve_card_background_12dp_gray"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_user_profile" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:singleLine="true"
+                        android:text="Robin"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_14sp" />
+
+                    <TextView
+                        android:id="@+id/classtxt1"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STD: 6th-A|Roll:21"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/_10sp" />
+                </LinearLayout>
+
+                <!--  <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                      android:id="@+id/circularProgressBar"
+                      android:layout_width="50dp"
+                      android:layout_height="50dp"
+                      android:layout_gravity="center"/>-->
+                <ImageView
+                    android:id="@+id/percnetage1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/perce"
+                    android:layout_marginEnd="30dp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/dash_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/radioGroupOptions1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/emply_btn"/>
+                    <TextView
+                        android:id="@+id/present1"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="Present"
+                        android:textColor="#868686"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/red_btn"/>
+                    <TextView
+                        android:id="@+id/absent1"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="Absent"
+                        android:textColor="#E85A5B"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/emply_btn"/>
+
+                    <TextView
+                        android:id="@+id/halfDay1"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="Half Day"
+                        android:textColor="#868686"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_curve_card_background_12dp_gray"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            android:visibility="gone"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_user_profile" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name2"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:singleLine="true"
+                        android:text="Arlin Sherbi"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_14sp" />
+
+                    <TextView
+                        android:id="@+id/classtxt2"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STD: 6th-A|Roll:21"
+                        android:textColor="#868686"
+                        android:textSize="@dimen/_10sp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center">
+
+                    <ProgressBar
+                        android:id="@+id/circularProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:progress="30"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:rotation="-180"
+                        android:progressDrawable="@drawable/circular_progress_drawable" />
+
+                    <TextView
+                        android:id="@+id/progressText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="30%"
+                        android:textSize="10sp"
+                        android:textColor="#388E3C"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!--   <ImageView
+                       android:id="@+id/percnetage3"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/perc1"
+                       android:layout_marginEnd="30dp"/>-->
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/dash_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:id="@+id/radioGroupOptions2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/emply_btn"/>
+                    <TextView
+                        android:id="@+id/present2"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="Present"
+                        android:textColor="#868686"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/emply_btn"/>
+                    <TextView
+                        android:id="@+id/absent2"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="Absent"
+                        android:textColor="#868686"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/blue_btn"/>
+
+                    <TextView
+                        android:id="@+id/halfDay2"
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="9dp"
+                        android:text="Half Day"
+                        android:textColor="#1170E4"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

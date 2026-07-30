@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Billing &amp; Stock Management"
+        android:textColor="@color/black_varient6"
+        style="@style/FontRegular"
+        android:drawablePadding="12dp"
+        android:textSize="@dimen/_14sp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="12dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v1"
+        android:background="#EFEFEF"/>
+</LinearLayout>

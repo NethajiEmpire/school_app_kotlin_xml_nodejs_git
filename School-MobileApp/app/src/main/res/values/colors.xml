@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232b68</color>
+    <color name="colorPrimaryVariant">#202D93</color>
+    <color name="colorPrimaryDark">#0E1863</color>
+    <color name="colorAccent">#718096</color>
+    <color name="primaryGrey">#E8EBF2</color>
+    <color name="colorOverlay">#78ffffff</color>
+    <color name="black">#FF000000</color>
+    <color name="black_varient3">#333333</color>
+    <color name="black_varient6">#666666</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#718096</color>
+    <color name="red">#B32124</color>
+    <color name="very_light_red">#FFEBEB</color>
+    <color name="light_red">#E85A5B</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#28C76F</color>
+    <color name="light_green">#C0FFCA</color>
+    <color name="hint_color2">#CBD5E0</color>
+    <color name="hyper_link">#0000FF</color>
+    <color name="green2">#75D00F</color>
+    <color name="red2">#F33B45</color>
+    <color name="progress_bar_back">#FF7475</color>
+    <color name="progress_bar">#6BE9A3</color>
+    <color name="orange_yellow">#FDF4A5</color>
+    <color name="violet">#8A2BE2</color>
+    <color name="indigo">#4B0082</color>
+    <color name="blue1">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="orange1">#FFA500</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="light_orange_bg">#FFF2DE</color>
+    <color name="orange">#F69300</color>
+    <color name="blue">#3F8BFB</color>
+    <color name="light_blue_bg">#EDF3FF</color>
+    <color name="red_hurry_up">#EA5455</color>
+    <color name="light_red_bg">#FFEBEB</color>
+    <color name="light_green_bg">#E6FFE2</color>
+    <color name="Very_light_blue_bg">#E9EDF4</color>
+
+
+
+</resources>

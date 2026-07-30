@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_outline"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_progress"
+        android:icon="@drawable/progress_unselected"
+        android:title="Progress" />
+
+    <item
+        android:id="@+id/navigation_fees"
+        android:icon="@drawable/fees_unselected"
+        android:title="Fees" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat_unselected"
+        android:title="Chat" />
+
+</menu>

@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="47dp"
+    android:height="47dp"
+    android:viewportWidth="47"
+    android:viewportHeight="47">
+
+    <!-- Background Rounded Square with Gradient -->
+    <path
+        android:pathData="M11.485,0.424L35.436,0.424A11.054,11.054 0,0 1,46.491 11.479L46.491,35.43A11.054,11.054 0,0 1,35.436 46.485L11.485,46.485A11.054,11.054 0,0 1,0.43 35.43L0.43,11.479A11.054,11.054 0,0 1,11.485 0.424z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="23.461"
+                android:startY="46.485"
+                android:endX="23.461"
+                android:endY="0.424"
+                android:type="linear">
+                <item android:offset="0" android:color="#FF232B68"/>
+                <item android:offset="1" android:color="#FF4555CE"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Mail Icon (Narrower Envelope) -->
+    <path
+        android:pathData="M16,16h15c1.1,0 2,0.9 2,2v11c0,1.1 -0.9,2 -2,2H16c-1.1,0 -2,-0.9 -2,-2V18c0,-1.1 0.9,-2 2,-2zm0,0l7.5,5l7.5,-5"
+        android:strokeLineJoin="round"
+        android:strokeWidth="1.8"
+        android:fillColor="#00000000"
+        android:strokeColor="#ffffff"
+        android:strokeLineCap="round"/>
+</vector>

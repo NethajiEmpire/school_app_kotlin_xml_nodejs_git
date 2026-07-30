@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Board"
+        android:textColor="@color/black_varient6"
+        style="@style/FontRegular"
+        android:background="@drawable/border_line_curve_24dp_yellow"
+        android:drawablePadding="5dp"
+        android:layout_margin="4dp"
+        android:textSize="@dimen/_12sp"
+        android:drawableEnd="@drawable/close2"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="5dp"/>
+</LinearLayout>

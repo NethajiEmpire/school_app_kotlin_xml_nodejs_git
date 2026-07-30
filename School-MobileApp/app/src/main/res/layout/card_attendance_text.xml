@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/border_curve_8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/lin"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:backgroundTint="#D8D8D8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:id="@+id/txt"
+            style="@style/FontRegular"
+            android:textColor="@color/black_varient6"
+            android:textSize="@dimen/_16sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

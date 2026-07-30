@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/border_line_curve_10dp_events_green"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/rel_lay"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_title"
+                        style="@style/FontRegular"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tomorrow will be Holiday"
+                        android:textColor="#232B68"
+                        android:textSize="@dimen/_14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_curve_16dp"
+                        android:backgroundTint="#CFFFD1"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="4dp"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Holiday"
+                        style="@style/FontDefault"
+                        android:textColor="#32B138" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/des"
+                    android:textSize="@dimen/_12sp"
+                    style="@style/FontRegular"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rel_lay"
+                    android:textColor="#828282"
+                    android:ellipsize="end"
+                    android:text="For all the students announced as a holiday tomorrow"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_line_curve_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Announced on"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="#828282"
+                        style="@style/FontRegular"/>
+
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/hugeicons_date_time"
+                        android:drawablePadding="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="18-04-2025"
+                        android:textColor="#515151"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Happening On"
+                        android:textColor="#828282"
+                        android:textSize="@dimen/_12sp" />
+
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/hugeicons_date_time_red"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="#3F8BFB"
+                        android:layout_marginTop="4dp"
+                        android:text="21-05-2025"
+                        android:textColor="#515151"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/border_line_curve_10dp_events_blue"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/rel_lay1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Special Assembly Tomorrow"
+                        android:textColor="#232B68"
+                        android:textSize="@dimen/_14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_curve_16dp"
+                        android:backgroundTint="#DAE7FF"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="4dp"
+                        android:textSize="@dimen/_12sp"
+                        android:text="Assembly"
+                        style="@style/FontDefault"
+                        android:textColor="#3F8BFB" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sp"
+                    style="@style/FontRegular"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rel_lay1"
+                    android:textColor="#828282"
+                    android:ellipsize="end"
+                    android:text="All Students must attend the special assembly on the top..."/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_line_curve_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="8dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Announced on"
+                        android:textSize="@dimen/_12sp"
+                        android:textColor="#828282"
+                        style="@style/FontRegular"/>
+
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/hugeicons_date_time"
+                        android:drawablePadding="4dp"
+                        android:layout_marginTop="4dp"
+                        android:text="18-04-2025"
+                        android:textColor="#515151"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Happening On"
+                        android:textColor="#828282"
+                        android:textSize="@dimen/_12sp" />
+
+                    <TextView
+                        style="@style/FontRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/hugeicons_date_time_red"
+                        android:drawablePadding="4dp"
+                        android:drawableTint="#3F8BFB"
+                        android:layout_marginTop="4dp"
+                        android:text="21-05-2025"
+                        android:textColor="#515151"
+                        android:textSize="@dimen/_14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

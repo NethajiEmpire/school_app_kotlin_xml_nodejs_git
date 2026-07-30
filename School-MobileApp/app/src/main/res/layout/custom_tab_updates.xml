@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin"
+    android:padding="4dp"
+    android:background="@drawable/border_curve_24dp"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:text="Home Work"
+        style="@style/FontRegular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp"
+        android:drawablePadding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="@dimen/_10sp"
+        android:gravity="center"
+        android:id="@+id/count"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="4dp"
+        android:background="@drawable/ic_round_line2"
+        style="@style/FontRegular"/>
+</LinearLayout>
+

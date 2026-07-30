@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border_line_curve_10dp_very_light_gray">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_user_profile"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+                    <TextView
+                        android:id="@+id/txt_title1"
+                        style="@style/FontMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="Supriya"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/black_varient3"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txt_incharge1"
+                        style="@style/FontMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Standard -10/A"
+                        android:layout_marginStart="4dp"
+                        android:textColor="#818181"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_title1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:background="@drawable/border_curve_24dp"
+                    android:backgroundTint="#D7E1FF"
+                    android:id="@+id/subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_14sp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    style="@style/FontMedium"
+                    android:textColor="#799BFF"
+                    android:layout_marginEnd="10dp"
+                    android:text="Subject "/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/dash_line"
+                android:backgroundTint="#BFBFBF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#124090"
+                style="@style/FontRegular"
+                android:textSize="@dimen/_14sp"
+                android:layout_marginTop="8dp"
+                android:text="Mam not Taking Class very well" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/dashed_border_line_curve_8dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/raise"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Raised On"
+                        android:textColor="#818181"
+                        android:textSize="12sp"
+                        style="@style/FontRegular" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="March 10, 2025"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        style="@style/FontMedium"    />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/givenDateLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To Whom"
+                        android:textColor="#818181"
+                        android:textSize="12sp"
+                        style="@style/FontRegular" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Nethaji Hada"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        style="@style/FontMedium"    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

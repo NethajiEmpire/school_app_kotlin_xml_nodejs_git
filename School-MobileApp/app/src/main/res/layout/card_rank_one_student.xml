@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="8dp"
+        android:padding="4dp"
+        android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rank_one_drb"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/studentImg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rank_card_std"/>
+            <TextView
+                android:id="@+id/stdName"
+                style="@style/FontMedium"
+                app:layout_constraintStart_toEndOf="@id/studentImg"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="0dp"
+                android:textSize="@dimen/_14sp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="Robin"
+                android:textColor="#333333" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stdMarks"
+                android:textSize="@dimen/_14sp"
+                style="@style/FontMedium"
+                android:padding="4dp"
+                app:layout_constraintStart_toEndOf="@id/studentImg"
+                app:layout_constraintTop_toBottomOf="@id/stdName"
+                android:textColor="#32B138"
+                android:text="160 Points"/>
+            <TextView
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stdName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/FontMedium"
+                android:padding="4dp"
+                android:textSize="@dimen/_14sp"
+                android:text="1st Rank"
+                android:textColor="#FF721E" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

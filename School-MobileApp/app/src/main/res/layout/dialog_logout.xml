@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/border_curve_16dp"
+    android:backgroundTint="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="22dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you Sure? Logout Now"
+            style="@style/FontMedium"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black_varient3"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout will not delete any data, you can still Sign In with this account."
+            style="@style/FontRegular"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black_varient6"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/logout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes, Logout Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/ic_button_bg"
+            android:paddingVertical="12dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="12dp"
+            android:paddingHorizontal="16dp"
+            style="@style/FontRegular"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No, I'm Staying"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:paddingVertical="6dp"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp"
+            style="@style/FontRegular"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

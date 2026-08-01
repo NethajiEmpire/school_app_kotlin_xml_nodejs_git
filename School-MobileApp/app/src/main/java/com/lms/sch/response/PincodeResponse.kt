@@ -13,9 +13,9 @@ import java.util.ArrayList
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class PincodeResponse : BaseModel() {
 
-    @JsonProperty("result")
+    @JsonProperty("data")
     @JsonIgnore
-    var result: ArrayList<Result> = ArrayList()
+    var data: ArrayList<Result> = ArrayList()
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

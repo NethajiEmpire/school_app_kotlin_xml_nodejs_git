@@ -10,9 +10,9 @@ import java.io.Serializable
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class UploadFileResponse : BaseModel() {
-    @JsonProperty("result")
+    @JsonProperty("data")
     @JsonIgnore
-    var result: ArrayList<Result> = ArrayList()
+    var data: ArrayList<Result> = ArrayList()
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

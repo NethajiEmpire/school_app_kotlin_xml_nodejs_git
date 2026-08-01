@@ -13,8 +13,8 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class ProfileDetailsResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: Result? = null
+    @JsonProperty("data")
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -23,8 +23,8 @@ class ProfileDetailsResponse : BaseModel() {
         @JsonProperty("rollNo")
         var rollNo : String? = ""
 
-        @JsonProperty("userprofile")
-        var userprofile: UserProfile? = null
+        @JsonProperty("user")
+    var user: UserProfile? = null
 
         @JsonProperty("applicationForm")
         var applicationForm: ApplicationForm? = null

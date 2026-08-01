@@ -12,9 +12,9 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class AssignmentUpdCountResponse : BaseModel() {
 
-    @JsonProperty("result")
+    @JsonProperty("data")
     @JsonIgnore
-    var result: Result? = null
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

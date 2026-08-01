@@ -400,10 +400,15 @@ class ApiConnection private constructor() {
     fun login(context: Context, email: String, password: String): LiveData<LoginResponse> {
         val apiResponse: MutableLiveData<LoginResponse> = MutableLiveData()
         val requestBody: MutableMap<String, String> = HashMap()
-        requestBody["email"] = email
+        
+        if (BaseUtils.isMobileNumber(email)) {
+            requestBody["mobile"] = email
+        } else {
+            requestBody["email"] = email
+        }
+        
         requestBody["password"] = password
         requestBody["device_id"] = BaseUtils.getDeviceID(context)
-//        requestBody["fcm_token"] = BaseUtils.nullCheckerStr(AppSharedPref.getFcmToken(context))
         requestBody["ip"] = BaseUtils.getIP(context)
         ApiClient.getClient(context)!!.create(ApiDetails::class.java).login(requestBody)
             .observeOn(AndroidSchedulers.mainThread())

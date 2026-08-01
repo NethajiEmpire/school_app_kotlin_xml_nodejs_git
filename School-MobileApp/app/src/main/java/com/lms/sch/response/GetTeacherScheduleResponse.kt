@@ -10,8 +10,8 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class GetTeacherScheduleResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: TeacherScheduleResult? = null
+    @JsonProperty("data")
+    var data: TeacherScheduleResult? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

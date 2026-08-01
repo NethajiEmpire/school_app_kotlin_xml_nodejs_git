@@ -11,8 +11,8 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class GetStudentClassTestProgress : BaseModel() {
 
-    @JsonProperty("result")
-    val result : ArrayList<Result> = ArrayList()
+    @JsonProperty("data")
+    val data : ArrayList<Result> = ArrayList()
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

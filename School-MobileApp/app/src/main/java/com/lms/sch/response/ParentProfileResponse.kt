@@ -10,15 +10,15 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class ParentProfileResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: Result? = null
+    @JsonProperty("data")
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
     class Result : Serializable {
 
-        @JsonProperty("userprofile")
-        var userprofile: UserProfile? = null
+        @JsonProperty("user")
+        var user: UserProfile? = null
 
         @JsonInclude(JsonInclude.Include.NON_NULL)
         @JsonIgnoreProperties(ignoreUnknown = true)

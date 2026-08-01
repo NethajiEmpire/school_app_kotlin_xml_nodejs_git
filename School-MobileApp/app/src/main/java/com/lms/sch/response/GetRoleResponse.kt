@@ -10,8 +10,8 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class GetRoleResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: ArrayList<Result>? = null
+    @JsonProperty("data")
+    var data: ArrayList<Result>? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

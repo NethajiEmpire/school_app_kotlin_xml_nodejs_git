@@ -9,8 +9,8 @@ import java.io.Serializable
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class GetFeesOnlineResponse : BaseModel() {
-    @JsonProperty("result")
-    var result: Result? = null
+    @JsonProperty("data")
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

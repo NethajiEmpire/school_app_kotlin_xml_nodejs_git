@@ -7,7 +7,7 @@ import com.lms.sch.models.BaseModel
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class SendOtpResponse : BaseModel() {
-   /* @JsonProperty("result")
+   /* @JsonProperty("data")
     @JsonIgnore
-    var result: Boolean? = false*/
+    var data: Boolean? = false*/
 }

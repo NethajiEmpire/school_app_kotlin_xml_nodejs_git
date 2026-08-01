@@ -221,7 +221,7 @@ class SharedHelper(context: Context) {
 
     var loggedIn: Boolean
         get() : Boolean {
-            return sharedPreference.getBoolean(Constants.SessionKeys.LOGGED_IN, true)
+            return sharedPreference.getBoolean(Constants.SessionKeys.LOGGED_IN, false)
         }
         set(value) {
             sharedPreference.putBoolean(Constants.SessionKeys.LOGGED_IN, value)

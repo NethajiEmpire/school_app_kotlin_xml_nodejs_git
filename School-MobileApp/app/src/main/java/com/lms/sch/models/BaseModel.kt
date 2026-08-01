@@ -9,11 +9,9 @@
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
     open class BaseModel : BaseObservable() {
-        @JsonProperty("success")
-        @JsonIgnore
+        @JsonProperty("status")
         var success: Boolean = false
 
-        @JsonProperty("msg")
-        @JsonIgnore
+        @JsonProperty("message")
         var msg: String = ""
     }

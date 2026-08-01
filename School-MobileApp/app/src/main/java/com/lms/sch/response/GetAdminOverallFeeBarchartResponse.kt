@@ -10,15 +10,15 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class GetAdminOverallFeeBarchartResponse : BaseModel() {
 
-    @JsonProperty("result")
-    val result: Result? = null
+    @JsonProperty("data")
+    val data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
     class Result : Serializable{
 
-        @JsonProperty("result")
-        val result: ArrayList<Result> = ArrayList()
+        @JsonProperty("data")
+        val data: ArrayList<Result> = ArrayList()
 
         @JsonProperty("summary")
         val summary: Summary? = null

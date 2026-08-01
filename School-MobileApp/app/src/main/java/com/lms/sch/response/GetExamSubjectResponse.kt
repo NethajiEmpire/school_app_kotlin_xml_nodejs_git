@@ -12,8 +12,8 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class GetExamSubjectResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: Result? = null
+    @JsonProperty("data")
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

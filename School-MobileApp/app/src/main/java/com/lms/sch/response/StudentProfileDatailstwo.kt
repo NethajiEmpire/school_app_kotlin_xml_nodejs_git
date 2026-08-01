@@ -12,8 +12,8 @@ import java.io.Serializable
 
 class StudentProfileDatailstwo : BaseModel() {
 
-    @JsonProperty("result")
-    var result: Result? = null
+    @JsonProperty("data")
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -26,8 +26,8 @@ class StudentProfileDatailstwo : BaseModel() {
         @JsonProperty("_id")
         var _id: String? = ""
 
-        @JsonProperty("student")
-        var student: Student? = null
+        @JsonProperty("user")
+        var user: Student? = null
 
         @JsonProperty("board")
         var board: Board? = null

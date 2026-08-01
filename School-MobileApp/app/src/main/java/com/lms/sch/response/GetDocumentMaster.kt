@@ -10,9 +10,9 @@ import java.io.Serializable
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class GetDocumentMaster : BaseModel() {
-    @JsonProperty("result")
+    @JsonProperty("data")
     @JsonIgnore
-    var result: ArrayList<Result>? = null
+    var data: ArrayList<Result>? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

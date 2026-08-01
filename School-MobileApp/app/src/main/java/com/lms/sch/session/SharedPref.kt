@@ -69,7 +69,7 @@ class SharedPref(private val context: Context) {
 
     fun getBoolean(Key: String, b: Boolean): Boolean {
         sharedPreferences = context.getSharedPreferences(Cache, Context.MODE_PRIVATE)
-        return sharedPreferences!!.getBoolean(Key, false)
+        return sharedPreferences!!.getBoolean(Key, b)
     }
 
     fun putInt(key: String, value: Int) {

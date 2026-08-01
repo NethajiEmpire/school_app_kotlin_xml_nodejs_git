@@ -66,39 +66,33 @@ class ApiClient {
 
             oktHttpClientBuilder.dispatcher(getDispatcher())
             oktHttpClientBuilder.addInterceptor { chain ->
-                Log.d("cvbnm",""+chain.request().body+".."+SharedHelper(context).token)
-                if(chain.request().body != null){
-                    Log.d("cvbnm",""+chain.request().body!!.contentType().toString())
-                    //  val requestBody = JSONObject(bodyToString(chain.request().body!!).toString())
+                val request = chain.request()
+                val builder = request.newBuilder()
+                    .addHeader("X-School-Code", Constants.ApplicationConstants.SCHOOL_CODE)
+
+                Log.d("cvbnm",""+request.body+".."+SharedHelper(context).token)
+                
+                if(request.body != null){
+                    Log.d("cvbnm",""+request.body!!.contentType().toString())
                     if(TempSingleton.getInstance().isWhatsApp){
                         TempSingleton.getInstance().isWhatsApp = false
-                        val builder = chain.request().newBuilder()
-                            .addHeader("Content-Type", "application/json")
+                        builder.addHeader("Content-Type", "application/json")
                             .addHeader("clientId", "nagheff6")
                             .addHeader("clientSecret", "gkmmuhre8cgjbxsa")
-                        chain.proceed(builder.build())
                     }
-                    else if(chain.request().body!!.contentType().toString() == "image/png"){
-                        val builder = chain.request().newBuilder().addHeader("Content-Type", "image/png")
-                        // .addHeader("authKey", AuthKeyHelper.getInstance().authKey)
-                        // .addHeader("apiAuthType", API_AUTH_TYPE.lowercase(Locale.getDefault()))
-                        // .addHeader("token", AuthKeyHelper.getInstance().token.toString())
-                        // .addHeader("Authorization", Constants.ApiKeys.BEARER+AuthKeyHelper.getInstance().token.toString())
-                        chain.proceed(builder.build())
+                    else if(request.body!!.contentType().toString() == "image/png"){
+                        builder.addHeader("Content-Type", "image/png")
                     }
                     else{
-                        val builder = chain.request().newBuilder()
-                            .addHeader("Content-Type", "application/json")
+                        builder.addHeader("Content-Type", "application/json")
                             .addHeader("Authorization", Constants.ApiKeys.BEARER+SharedHelper(context).token)
-                        chain.proceed(builder.build())
                     }
                 }
                 else{
-                    val builder = chain.request().newBuilder()
-                       // .addHeader("Content-Type", "application/json")
-                        .addHeader("Authorization", Constants.ApiKeys.BEARER+SharedHelper(context).token)
-                    chain.proceed(builder.build())
+                    builder.addHeader("Authorization", Constants.ApiKeys.BEARER+SharedHelper(context).token)
                 }
+                
+                chain.proceed(builder.build())
             }
           //  oktHttpClientBuilder.addInterceptor(AddCookiesInterceptor(context))
           //  oktHttpClientBuilder.addInterceptor(ReceivedCookiesInterceptor(context))
@@ -114,9 +108,6 @@ class ApiClient {
                 }
                 val token = response.header("token")
                 Log.d("Response Code = ",""+response.code)
-                if(response.code == 503 || response.code == 409 || response.code == 404 || response.code == 413){
-                     response.close()
-                 }
                 response
             }
 
@@ -163,6 +154,7 @@ class ApiClient {
             oktHttpClientBuilder.addInterceptor { chain ->
                 val builder = chain.request().newBuilder()
                         .addHeader("Content-Type", "text/html")
+                        .addHeader("X-School-Code", Constants.ApplicationConstants.SCHOOL_CODE)
                         .addHeader("apiAuthType", API_AUTH_TYPE.lowercase(Locale.getDefault()))
                 chain.proceed(builder.build())
             }

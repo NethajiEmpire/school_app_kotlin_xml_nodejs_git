@@ -120,35 +120,35 @@ class AcademicActivity : BaseActivity() {
                 DialogUtils.dismissLoader()
                 it.success.let { success ->
                     if(success){
-                        if (it.result != null){
-                            academicStatsRes = it.result!!
+                        if (it.data != null){
+                            academicStatsRes = it.data!!
 
                             if (academicStatsRes!!.batch != null){
-                                binding.btNum.text = it.result!!.batch.toString()
+                                binding.btNum.text = it.data!!.batch.toString()
                             }
                             else{
                                 binding.btNum.text = "--/--"
                             }
                             if (academicStatsRes!!.board != null){
-                                binding.boardNum.text = it.result!!.board.toString()
+                                binding.boardNum.text = it.data!!.board.toString()
                             }
                             else{
                                 binding.boardNum.text = "--/--"
                             }
                             if (academicStatsRes!!.standard != null){
-                                binding.stdNum.text = it.result!!.standard.toString()
+                                binding.stdNum.text = it.data!!.standard.toString()
                             }
                             else{
                                 binding.stdNum.text = "--/--"
                             }
                             if (academicStatsRes!!.section != null){
-                                binding.secNum.text = it.result!!.section.toString()
+                                binding.secNum.text = it.data!!.section.toString()
                             }
                             else{
                                 binding.secNum.text = "--/--"
                             }
                             if (academicStatsRes!!.subject != null){
-                                binding.subNum.text = it.result!!.subject.toString()
+                                binding.subNum.text = it.data!!.subject.toString()
                             }
                             else{
                                 binding.subNum.text = "--/--"
@@ -176,10 +176,10 @@ class AcademicActivity : BaseActivity() {
                 DialogUtils.dismissLoader()
                 it.success.let { success ->
                     if (success) {
-                        if (it.result != null) {
-                            if (it.result != null && it.result!!.rows!!.isNotEmpty()) {
+                        if (it.data != null) {
+                            if (it.data != null && it.data!!.rows!!.isNotEmpty()) {
                                 val layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-                                val adapter = GetAcademicBatchAdapter(this, it.result!!.rows!!)
+                                val adapter = GetAcademicBatchAdapter(this, it.data!!.rows!!)
                                 binding.academicRecyclerView.layoutManager = layoutManager
                                 binding.academicRecyclerView.adapter = adapter
                                 binding.noData.root.visibility = View.GONE
@@ -208,10 +208,10 @@ class AcademicActivity : BaseActivity() {
                 DialogUtils.dismissLoader()
                 it.success.let { success ->
                     if (success) {
-                        if (it.result != null) {
-                            if (it.result != null && it.result!!.isNotEmpty()) {
+                        if (it.data != null) {
+                            if (it.data != null && it.data!!.isNotEmpty()) {
                                 val layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-                                val adapter = GetAcademicBoardAdapter(this, it.result!!, ArrayList(), ArrayList(), 0 )
+                                val adapter = GetAcademicBoardAdapter(this, it.data!!, ArrayList(), ArrayList(), 0 )
                                 binding.academicRecyclerView.layoutManager = layoutManager
                                 binding.academicRecyclerView.adapter = adapter
 
@@ -242,10 +242,10 @@ class AcademicActivity : BaseActivity() {
                 DialogUtils.dismissLoader()
                 it.success.let { success ->
                     if (success) {
-                        if (it.result != null) {
-                            if (it.result != null && it.result!!.isNotEmpty()) {
+                        if (it.data != null) {
+                            if (it.data != null && it.data!!.isNotEmpty()) {
                                 val layoutManager = GridLayoutManager(this,2, RecyclerView.VERTICAL, false)
-                                val adapter = GetAcademicBoardAdapter(this, ArrayList(), it.result!!, ArrayList(), 1 )
+                                val adapter = GetAcademicBoardAdapter(this, ArrayList(), it.data!!, ArrayList(), 1 )
                                 binding.academicRecyclerView.layoutManager = layoutManager
                                 binding.academicRecyclerView.adapter = adapter
 
@@ -276,10 +276,10 @@ class AcademicActivity : BaseActivity() {
                 DialogUtils.dismissLoader()
                 it.success.let { success ->
                     if (success) {
-                        if (it.result != null) {
-                            if (it.result != null && it.result!!.isNotEmpty()) {
+                        if (it.data != null) {
+                            if (it.data != null && it.data!!.isNotEmpty()) {
                                 val layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-                                val adapter = GetAcademicBoardAdapter(this, ArrayList(), ArrayList(), it.result!!, 2 )
+                                val adapter = GetAcademicBoardAdapter(this, ArrayList(), ArrayList(), it.data!!, 2 )
                                 binding.academicRecyclerView.layoutManager = layoutManager
                                 binding.academicRecyclerView.adapter = adapter
                                 binding.noData.root.visibility = View.GONE
@@ -308,10 +308,10 @@ class AcademicActivity : BaseActivity() {
                 DialogUtils.dismissLoader()
                 it.success.let { success ->
                     if (success) {
-                        if (it.result != null) {
-                            if (it.result != null && it.result!!.isNotEmpty()) {
+                        if (it.data != null) {
+                            if (it.data != null && it.data!!.isNotEmpty()) {
                                 val layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-                                val adapter = GetAcademicSubjectAdapter(this, it.result!! )
+                                val adapter = GetAcademicSubjectAdapter(this, it.data!! )
                                 binding.academicRecyclerView.layoutManager = layoutManager
                                 binding.academicRecyclerView.adapter = adapter
                                 binding.noData.root.visibility = View.GONE

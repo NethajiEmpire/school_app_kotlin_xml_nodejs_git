@@ -8,8 +8,8 @@ import java.io.Serializable
 
 class SubmissionProgressTeacherSide : BaseModel() {
 
-    @JsonProperty("result")
-    var result : Result? = null
+    @JsonProperty("data")
+    var data : Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

@@ -14,6 +14,7 @@ object Constants {
         const val API_USER_NAME = "mobikul"
         const val API_PASSWORD = "eVNhTQl3i1fSsdwo"
 
+        const val SCHOOL_CODE = "VISTA" // Updated from DEMO to VISTA
         const val DEMO_USERNAME = ""
         const val DEMO_PASSWORD = ""
 
@@ -81,10 +82,10 @@ object Constants {
         const val BASE_URL = Constants.ApplicationConstants.BASE_URL
 
         const val UPLOAD_FILE = "upload"
-        const val REGISTER = "register"
+        const val REGISTER = "auth/register"
         const val SEND_OTP_MOBILE = "otp/send"
         const val VERIFY_OTP_MOBILE = "otp/verify"
-        const val LOGIN = "signin"
+        const val LOGIN = "auth/login"
         const val STUDENT_FORM = "studentform"
         const val APPLICATION_FORM = "studentApplication"
         const val PROFILE = "profile/"
@@ -115,10 +116,10 @@ object Constants {
         const val STUDENT_GET_EXAM_PROGRESS = BASE_URL+"getStudentExamProgress/"
         const val ATTENDANCE_PROGRESS = BASE_URL+"student/attendance/progress"
 
-        const val FORGOT = "forgot/password"
+        const val FORGOT = "auth/forgot/password"
         const val GUEST_PROFILE = "getuserDetails/"
         const val STUDENT_OVERALL_PROGRESS = "student/Overall/Progress/"
-        const val GUEST_REGISTER = "register"
+        const val GUEST_REGISTER = "auth/register"
         const val REGISTRATION_FEE = "registration-fee-generate"
         const val STUDENT_INFO = "studentInformation"
         const val PARENT_INFO = "parentInformation"

@@ -27,20 +27,20 @@ class SplashActivity: AppCompatActivity() {
     }
 
     fun checkLogin(){
-        if(sharedHelper.loggedIn){
+        if(sharedHelper.loggedIn && sharedHelper.id.isNotEmpty()){
             DialogUtils.showLoader(this)
             ApiConnection.getInstance().profile(this).observe(this){
                 it.let {
                     DialogUtils.dismissLoader()
                     it.success.let { success->
                         if (success){
-                            if (it.result != null){
-                                if (it.result!!.userprofile != null && it.result!!.userprofile!!.registrationFee == true){
+                            if (it.data != null){
+                                if (it.data!!.userprofile != null && it.data!!.userprofile!!.registrationFee == true){
                                     val bundle = Bundle()
                                     var isBelow5 = false
                                     var std = 0
-                                    if (it.result!!.studentPreference != null && it.result!!.studentPreference!!.studentClass != null && it.result!!.studentPreference!!.studentClass!!.name!!.isNotEmpty()){
-                                        std = it.result!!.studentPreference!!.studentClass!!.name!!.toInt()
+                                    if (it.data!!.studentPreference != null && it.data!!.studentPreference!!.studentClass != null && it.data!!.studentPreference!!.studentClass!!.name!!.isNotEmpty()){
+                                        std = it.data!!.studentPreference!!.studentClass!!.name!!.toInt()
                                         sharedHelper.standard = std.toString()
                                     }
                                     if (std <= 5){
@@ -66,6 +66,9 @@ class SplashActivity: AppCompatActivity() {
                        }
                         else {
                             UiUtils.showSnack(it.msg,binding.root,false)
+                            // If profile fetch fails, maybe session expired? Clear and go to login.
+                            sharedHelper.loggedIn = false
+                            BaseUtils.startActivity(this@SplashActivity, OtpActivity(), null, true)
                         }
                     }
                 }

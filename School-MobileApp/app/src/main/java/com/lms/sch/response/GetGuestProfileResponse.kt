@@ -11,9 +11,9 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 open class GetGuestProfileResponse : BaseModel() {
 
-    @JsonProperty("result")
+    @JsonProperty("data")
     @JsonIgnore
-    var result: Result? = null
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -22,8 +22,8 @@ open class GetGuestProfileResponse : BaseModel() {
         @JsonProperty("currentStep")
         var currentStep: Int? = null
 
-        @JsonProperty("userProfile")
-        var userProfile: UserProfile? = null
+        @JsonProperty("user")
+        var user: UserProfile? = null
 
         @JsonProperty("feesDetails")
         var feesDetails: FeesDetails? = null

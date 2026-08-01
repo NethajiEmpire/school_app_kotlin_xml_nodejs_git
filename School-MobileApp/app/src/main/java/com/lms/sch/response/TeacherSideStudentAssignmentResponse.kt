@@ -10,8 +10,8 @@ import java.io.Serializable
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
 class TeacherSideStudentAssignmentResponse : BaseModel() {
-    @JsonProperty("result")
-    val result : ArrayList<Result>? = ArrayList()
+    @JsonProperty("data")
+    val data : ArrayList<Result>? = ArrayList()
 
     class Result : Serializable{
 

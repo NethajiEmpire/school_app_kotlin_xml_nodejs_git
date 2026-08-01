@@ -51,9 +51,9 @@ class OtpActivity : BaseActivity() {
 ////            binding.edtPhone.setText("7259628931")
 //            binding.edtMail.setText("student@lms.com")
 //             binding.edtMail.setText("student1@lms.com")
-            binding.edtMail.setText("student@gmail.com")
+            binding.edtMail.setText("admin@vistaschool.com")
 //             binding.edtPassword.setText("1234")
-            binding.edtPassword.setText("student@123")
+            binding.edtPassword.setText("Password@123")
 //            binding.edtMail.setText("parent@lms.com")
 //            binding.edtMail.setText("parent@gmail.com")
 //            binding.edtPassword.setText("parent@123")
@@ -330,27 +330,16 @@ class OtpActivity : BaseActivity() {
                     it?.let {
                         it.success.let { success ->
                             if (success) {
-                                if (it.result != null) {
+                                if (it.data != null) {
                                     binding.verifyOtpErr.visibility = View.GONE
                                     sharedHelper.loggedIn = true
-                                    sharedHelper.token = it.result.tokens.accessToken!!
-                                    sharedHelper.name = BaseUtils.nullCheckerStr(it.result.userDetails.firstName)+" "+BaseUtils.nullCheckerStr(it.result.userDetails.lastName)
-                                    sharedHelper.id = it.result.userDetails.id!!
-                                    sharedHelper.role = it.result!!.userDetails!!.role!!.name!!
-                                    sharedHelper.roleId = it.result!!.userDetails!!.role!!._id!!
-                                    val roles = ArrayList<String>()
-//                                    for (items in it.result.userDetails.roles){
-//                                        roles.add(items.name!!)
-//                                    }
-//                                    sharedHelper.rolesArray = roles
-                                    sharedHelper.email = BaseUtils.nullCheckerStr(it.result.userDetails.email)
-                                    sharedHelper.mobileNumber = BaseUtils.nullCheckerStr(it.result.userDetails.mobile)
-                                    if(it.result.userDetails.img_url != null){
-                                        sharedHelper.imgUrl = it.result.userDetails.img_url!!.toString()
-                                    }
-                                    else{
-                                        sharedHelper.imgUrl = ""
-                                    }
+                                    sharedHelper.token = it.data.accessToken!!
+                                    sharedHelper.name = BaseUtils.nullCheckerStr(it.data.user.name)
+                                    sharedHelper.id = it.data.user.id!!
+                                    sharedHelper.role = it.data.user.role?.uppercase() ?: ""
+                                    sharedHelper.email = BaseUtils.nullCheckerStr(it.data.user.email)
+                                    sharedHelper.mobileNumber = BaseUtils.nullCheckerStr(it.data.user.mobile)
+                                    sharedHelper.imgUrl = ""
                                     moveNext()
                                 }
                                 else {
@@ -463,8 +452,8 @@ class OtpActivity : BaseActivity() {
                     DialogUtils.dismissLoader()
                     it.success.let { success->
                         if (success){
-                            if (it.result != null && it.result!!.userprofile != null){
-                                sharedHelper.childList = it.result!!.userprofile!!.students!!
+                            if (it.data != null && it.data!!.userprofile != null){
+                                sharedHelper.childList = it.data!!.userprofile!!.students!!
                                 Log.d("child Id", "moveNext: ${"=-----"}")
                                 for (items in it.result!!.userprofile!!.students!!){
                                     Log.d("child Id", "moveNext: ${"=-forrr----"}")
@@ -498,13 +487,13 @@ class OtpActivity : BaseActivity() {
                     DialogUtils.dismissLoader()
                     it.success.let { success->
                         if (success){
-                            if (it.result != null){
-                                if (it.result!!.userprofile != null && it.result!!.userprofile!!.registrationFee == true){
+                            if (it.data != null){
+                                if (it.data!!.userprofile != null && it.data!!.userprofile!!.registrationFee == true){
                                     val bundle = Bundle()
                                     var isBelow5 = false
                                     var std = 0
-                                    if (it.result!!.studentPreference != null && it.result!!.studentPreference!!.studentClass != null && it.result!!.studentPreference!!.studentClass!!.name!!.isNotEmpty()){
-                                        std = it.result!!.studentPreference!!.studentClass!!.name!!.toInt()
+                                    if (it.data!!.studentPreference != null && it.data!!.studentPreference!!.studentClass != null && it.data!!.studentPreference!!.studentClass!!.name!!.isNotEmpty()){
+                                        std = it.data!!.studentPreference!!.studentClass!!.name!!.toInt()
                                         sharedHelper.standard = std.toString()
                                     }
                                     if (std <= 5){
@@ -576,34 +565,13 @@ class OtpActivity : BaseActivity() {
                     if (success) {
 //                        UiUtils.showSnack(it.msg, binding.root,true)
                         sharedHelper.loggedIn = true
-                        sharedHelper.token = it.result!!.tokens!!.accessToken!!
-                        sharedHelper.id = it.result!!.userDetails!!._id!!
-                        sharedHelper.role = it.result!!.userDetails!!.role!!.name!!
-
-                        val roles = ArrayList<String>()
-//                        for (items in it.result!!.userDetails!!.roles!!){
-//                            roles.add(items.name!!)
-//                        }
-//                        sharedHelper.rolesArray = roles
-//                        if(it.result!!.user != null){
-//                            sharedHelper.leadId = it.result!!.user!!.lead_id.toString()
-//                        }
-
-                        if(it.result!!.userDetails!!.img_url != null){
-                            sharedHelper.imgUrl = it.result!!.userDetails!!.img_url!!.toString()
-                        }
-                        else{
-                            sharedHelper.imgUrl = ""
-                        }
-
-                        if(BaseUtils.nullCheckerStr(it.result!!.userDetails!!.name).isNotEmpty()){
-                            sharedHelper.name = it.result!!.userDetails!!.name!!
-                        }
-                        else{
-                            sharedHelper.name = it.result!!.userDetails!!.roleType!!
-                        }
-                        sharedHelper.email = BaseUtils.nullCheckerStr(it.result!!.userDetails!!.email)
-                        sharedHelper.mobileNumber = BaseUtils.nullCheckerStr(it.result!!.userDetails!!.mobile)
+                        sharedHelper.token = it.data!!.accessToken!!
+                        sharedHelper.id = it.data!!.user!!.id!!
+                        sharedHelper.role = it.data!!.user!!.role?.uppercase() ?: ""
+                        sharedHelper.name = it.data!!.user!!.name!!
+                        sharedHelper.email = BaseUtils.nullCheckerStr(it.data!!.user!!.email)
+                        sharedHelper.mobileNumber = BaseUtils.nullCheckerStr(it.data!!.user!!.mobile)
+                        sharedHelper.imgUrl = ""
 
                         moveNext()
                     }

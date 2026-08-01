@@ -8,8 +8,8 @@ import java.io.Serializable
 
 class ProjectResultResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: ArrayList<Result>? = ArrayList()
+    @JsonProperty("data")
+    var data: ArrayList<Result>? = ArrayList()
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)

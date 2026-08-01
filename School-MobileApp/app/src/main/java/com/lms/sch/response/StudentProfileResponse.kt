@@ -10,8 +10,8 @@ import java.io.Serializable
 @JsonIgnoreProperties(ignoreUnknown = true)
 class StudentProfileResponse : BaseModel() {
 
-    @JsonProperty("result")
-    var result: Result? = null
+    @JsonProperty("data")
+    var data: Result? = null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -25,8 +25,8 @@ class StudentProfileResponse : BaseModel() {
         @JsonProperty("parent")
         var parent : String? = ""
 
-        @JsonProperty("student")
-        var student: Student? = null
+        @JsonProperty("user")
+        var user: Student? = null
 
         @JsonProperty("board")
         var board: Board? = null
